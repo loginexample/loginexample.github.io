@@ -5,9 +5,10 @@ $(document).ready(function() {
 
         event.preventDefault(); // prevent PageReLoad
 
+       var ValidEmail = $('#username').val() === ''; // User validate
 var ValidPassword = $('#password').val() === '6415'; // Password validate
 
-        if (ValidPassword === true) { // if ValidEmail & ValidPassword
+        if (ValidEmail === true && ValidPassword === true) { // if ValidEmail & ValidPassword
             $('.valid').css('display', 'block');
             window.location = "https://eirias.co.uk"; // go to home.html
         }
