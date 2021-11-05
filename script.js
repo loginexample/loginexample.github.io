@@ -10,7 +10,7 @@ var ValidPassword = $('#password').val() === 'password1'; // Password validate
 
         if (ValidEmail === true && ValidPassword === true) { // if ValidEmail & ValidPassword
             $('.valid').css('display', 'block');
-            window.location = "http://eirias.co.uk"; // go to home.html
+            window.location = "http://eirias.co.uk/"; // go to home.html
         }
         else {
             $('.error').css('display', 'block'); // show error msg
